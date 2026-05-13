@@ -1,80 +1,48 @@
-# PDI v2.3 — Philosophische Entscheidungsanalyse
+# PRISM v0.8
 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-c4a04e.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![Version](https://img.shields.io/badge/Version-2.3.0-blue.svg)](./VERSION)
-[![ORCID](https://img.shields.io/badge/ORCID-0009--0003--9799--6747-A6CE39.svg)](https://orcid.org/0009-0003-9799-6747)
+**Parallel Reasoning & Integrated Scenario Modelling**
 
-**Universal-Provider-Edition** · Mai 2026 · Thomas Schüller
+Multi-Linsen-Analyseplattform für Konflikte, Verhandlungen und strategische Entscheidungen.
 
-> ⚠️ **Hinweis:** Diese Version wurde nach Wunsch des Autors **ohne abschließenden Browser-Test** veröffentlicht. Bugs sind willkommen unter forschung@tschueller.com oder als GitHub-Issue.
+## Module (9)
 
----
+♟ Game Theory · 🧠 Prospect Theory · 🤝 Bargaining · ⚡ Deterrence · 🔗 Principal-Agent · 🔄 System Dynamics · 🔮 Scenarios · 🔀 Coopetition · ⏳ Real Options
 
-## Was ist das?
+## Features
 
-Ein **interaktives Werkzeug zur systematischen Analyse ethischer Entscheidungssituationen** durch **zwölf philosophische Traditionen**. Pluralistischer Strukturvergleich statt monistische Synthese.
+- Vergleichsmatrix mit Konflikterkennung
+- What-If Sandbox (live Payoff-Variation)
+- Sensitivitätsanalyse (Tornado, Kipppunkte)
+- Executive Summary
+- Persistent Storage + Markdown-Export
+- DE/EN Language Toggle (vollständig bilingual)
+- 2 Demo-Cases (Wettbewerb + Verhandlung)
 
-**v2.3 Neuerung:** Universal-Provider-Modul integriert — wähle aus **17 LLM-Anbietern**:
+## Deploy
 
-### 🏠 Lokal (offline, gratis)
-Ollama · LM Studio · llama.cpp · text-generation-webui · vLLM
+```bash
+cp PRISM_v0.8.jsx src/App.jsx
+npm install recharts
+npm start
+```
 
-### 🟢 Gratis (Cloud, Free-Tier)
-OpenRouter Free · Google Gemini Free-Tier · Groq · Hugging Face · Cerebras
+## Dateien
 
-### 💳 Bezahlt (höchste Qualität)
-Anthropic · OpenAI · OpenRouter · Mistral (EU) · Cohere · Together · Custom Endpoint
+| Datei | Inhalt | Lizenz |
+|-------|--------|--------|
+| PRISM_v0.8.jsx | Haupt-App | AGPL-3.0 |
+| PRISM_Systemkonzept.docx | 11-Kapitel-Produktkonzept | CC BY 4.0 |
+| PRISM_Companion.md / .docx | Begleitpapier | CC BY 4.0 |
+| PRISM_Flyer.pdf | A4 Flyer | CC BY 4.0 |
+| LICENSE | AGPL-3.0 + CC BY 4.0 | — |
 
----
+## Schließungstyp
 
-## Schnellstart
+**VERSIONSSCHLUSS** — v0.8 Freeze. Patches als v0.8.x, Erweiterungen als v0.9+.
 
-### Variante A — komplett kostenlos
-1. `pdi-v2.3.html` doppelklicken
-2. Tier "🟢 Gratis" wählen → "OpenRouter (GRATIS-Modelle)"
-3. Modell `gemini-2.0-flash-exp:free` oder `llama-3.3-70b:free`
-4. Auf [openrouter.ai/keys](https://openrouter.ai/keys) gratis Key holen
-5. Eingeben → Speichern → Analysieren
+## Autor
 
-### Variante B — komplett offline
-1. [Ollama](https://ollama.com) installieren
-2. `ollama pull llama3.2` (Terminal)
-3. `pdi-v2.3.html` doppelklicken
-4. Tier "🏠 Lokal" → "Ollama" → Modell `llama3.2`
-5. Kein Key nötig → Speichern → Analysieren
-
-### Variante C — bezahlt für beste Qualität
-1. [console.anthropic.com](https://console.anthropic.com) → Key ($5 Prepaid)
-2. `pdi-v2.3.html` öffnen → Tier "💳 Bezahlt" → "Anthropic Claude"
+Thomas Schüller · Syntagma Forschung · Wien · forschung@tschueller.com · ORCID 0009-0003-9799-6747
 
 ---
-
-## Datei-Inventar
-
-| Datei | Zweck |
-|---|---|
-| `pdi-v2.3.html` | **Standalone-Tool** (doppelklicken) |
-| `pdi-v2.3.jsx` | React-Source |
-| `provider-modul.js` | Universal-LLM-Modul v1.0 |
-| `werkstattlinie.css` | Design-System |
-| `PAPER-strukturvergleich-v1.0.md` | Methodisches Working Paper |
-| `LEHRERHANDREICHUNG.md` | Didaktische Anleitung |
-| `DATENSCHUTZ.md` / `.html` | DSGVO-Hinweise |
-| `SCHEMA-konkordanz-v1.md` | Cross-Tool-Datenschema |
-| `LICENSE` / `CITATION.cff` | Lizenz + Zitation |
-
----
-
-## BYOK-Prinzip (Memory-Regel #9 + #22)
-
-- API-Key bleibt im Browser (`localStorage`)
-- Geht direkt an den gewählten Anbieter
-- Niemand sonst sieht ihn (auch der Tool-Autor nicht)
-- Bei lokalen Modellen: gar keine externe Verbindung
-
----
-
-## Lizenz
-
-CC BY 4.0 (Doku) + MIT (Code)
-© 2026 Thomas Schüller · ORCID 0009-0003-9799-6747
+v0.8 — 2026-05-13
