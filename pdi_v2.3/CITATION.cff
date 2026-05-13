@@ -1,0 +1,71 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "Philosophische Entscheidungsanalyse (PDI) — Academic Edition"
+abstract: >
+  Interactive tool for the systematic analysis of ethical decision
+  situations through twelve philosophical traditions. Pluralistic
+  structure-comparison approach instead of monistic synthesis.
+  Designed for school (Sek. II), university (Bachelor, Master),
+  professional practice, and personal reflection. Single-file React
+  application with persistent browser storage, four citation styles
+  (APA, Harvard, Chicago, MLA), 50+ glossary terms, and cross-tool
+  JSON export (konkordanz-v1 schema).
+version: "2.1"
+date-released: 2026-05-12
+license: CC-BY-4.0
+authors:
+  - family-names: "Schüller"
+    given-names: "Thomas"
+    orcid: "https://orcid.org/0009-0003-9799-6747"
+    email: "forschung@tschueller.com"
+    affiliation: "Independent researcher"
+    city: "Vienna"
+    country: AT
+keywords:
+  - ethics
+  - applied ethics
+  - philosophy
+  - decision support
+  - pluralism
+  - education
+  - structure-comparison
+  - multi-theory analysis
+  - kant
+  - utilitarianism
+  - virtue ethics
+  - rawls
+  - care ethics
+  - discourse ethics
+  - existentialism
+  - feminist ethics
+  - confucianism
+  - ubuntu philosophy
+  - natural law
+  - pragmatism
+  - AI-assisted analysis
+  - LLM
+  - claude
+identifiers:
+  - type: other
+    value: "PDI-v2.1-academic"
+    description: "Internal version identifier"
+references:
+  - type: article
+    authors:
+      - family-names: "Schüller"
+        given-names: "Thomas"
+        orcid: "https://orcid.org/0009-0003-9799-6747"
+    title: "Strukturvergleich statt Synthese: Methodische Grundlagen einer pluralistischen Multi-Theorie-Ethikanalyse"
+    year: 2026
+    notes: "Working Paper v1.0, CC BY 4.0"
+preferred-citation:
+  type: software
+  title: "Philosophische Entscheidungsanalyse (PDI) — Academic Edition"
+  authors:
+    - family-names: "Schüller"
+      given-names: "Thomas"
+      orcid: "https://orcid.org/0009-0003-9799-6747"
+  version: "2.1"
+  year: 2026
+  license: CC-BY-4.0

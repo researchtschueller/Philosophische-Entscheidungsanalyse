@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>PDI v2.1 - DATENSCHUTZ</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="werkstattlinie.css" />
+</head>
+<body class="ebene-paper">
+<header id="title-block-header">
+<h1 class="title">PDI v2.1 - DATENSCHUTZ</h1>
+</header>
+<h1 id="datenschutz-hinweise-pdi-v2.1">Datenschutz-Hinweise — PDI
+v2.1</h1>
+<p>Stand: Mai 2026 · CC BY 4.0</p>
+<hr />
+<h2 id="zusammenfassung-in-einem-satz">Zusammenfassung in einem
+Satz</h2>
+<p>Das PDI speichert deine Analysen ausschließlich lokal in deinem
+Browser; eingegebene Texte werden zur Analyse an die Anthropic-API
+geschickt und unterliegen deren Datenschutzbestimmungen.</p>
+<hr />
+<h2 id="wer-ist-verantwortlich">1. Wer ist verantwortlich?</h2>
+<p><strong>Verantwortlich für das Tool (Code, Konzept):</strong> Thomas
+Schüller Wien, Österreich forschung@tschueller.com ORCID:
+0009-0003-9799-6747</p>
+<p><strong>Verantwortlich für die KI-Verarbeitung:</strong> Anthropic,
+PBC 548 Market St, PMB 90375 San Francisco, CA 94104, USA
+Datenschutzbestimmungen: https://www.anthropic.com/legal/privacy</p>
+<hr />
+<h2 id="welche-daten-werden-verarbeitet">2. Welche Daten werden
+verarbeitet?</h2>
+<h3 id="was-du-eingibst">2.1 Was du eingibst</h3>
+<ul>
+<li><strong>Situationstext</strong> (Freitext-Beschreibung deiner
+ethischen Frage)</li>
+<li><strong>Konfiguration</strong> (Niveau, Zitierstil,
+Theorienauswahl)</li>
+</ul>
+<h3 id="was-lokal-in-deinem-browser-gespeichert-wird">2.2 Was lokal in
+deinem Browser gespeichert wird</h3>
+<ul>
+<li>Bis zu 50 deiner letzten Analysen</li>
+<li>Speicherort: Browser-Storage (window.storage)</li>
+<li>Niemals an Server übertragen</li>
+<li>Löschbar über die “Archiv leeren”-Funktion oder durch
+Browser-Daten-Löschen</li>
+</ul>
+<h3 id="was-an-anthropic-übertragen-wird">2.3 Was an Anthropic
+übertragen wird</h3>
+<p>Bei jeder Analyse: - Deine Situationsbeschreibung - Die
+Theorienauswahl - Die Niveau-Einstellung</p>
+<p>Anthropic verarbeitet diese Daten gemäß den eigenen
+Datenschutzbestimmungen. Anthropic kann Anfragen für Sicherheits- und
+Missbrauchsprüfung zwischenspeichern.</p>
+<hr />
+<h2 id="rechtsgrundlagen-dsgvo">3. Rechtsgrundlagen (DSGVO)</h2>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Verarbeitung</th>
+<th>Rechtsgrundlage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Lokale Browser-Speicherung</td>
+<td>Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse:
+Nutzbarkeit)</td>
+</tr>
+<tr class="even">
+<td>Übertragung an Anthropic</td>
+<td>Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung: Du wählst die
+Analyse)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="drittland-übermittlung">4. Drittland-Übermittlung</h2>
+<p>Die Anthropic-API verarbeitet Daten in den USA. Anthropic verwendet
+EU-Standardvertragsklauseln (SCC) gemäß Art. 46 Abs. 2 lit. c DSGVO.
+Bitte informiere dich in Anthropics Datenschutzerklärung über aktuelle
+Details.</p>
+<hr />
+<h2 id="empfehlungen-für-sensible-inhalte">5. Empfehlungen für sensible
+Inhalte</h2>
+<p><strong>Anonymisiere personenbezogene Inhalte vor der
+Eingabe:</strong></p>
+<ul>
+<li><p>❌ “Mein Kollege Markus Müller hat…”</p></li>
+<li><p>✓ “Ein Kollege hat…”</p></li>
+<li><p>❌ “Meine Tochter, die in der Schule [Schulname] in der 3B
+ist…”</p></li>
+<li><p>✓ “Meine Tochter im Schulalter…”</p></li>
+</ul>
+<p><strong>Verzichte auf Eingabe von:</strong> - Vollständigen Namen
+Dritter - Adressen, Geburtsdaten - Krankheitsbefunde mit Klarnamen -
+Strafrechtlich relevanten Detailangaben</p>
+<p>Diese Empfehlungen gelten umso strenger im
+<strong>Schul-/Bildungskontext</strong> (Minderjährigenschutz).</p>
+<hr />
+<h2 id="deine-rechte">6. Deine Rechte</h2>
+<p>Nach DSGVO hast du Recht auf:</p>
+<ul>
+<li><strong>Auskunft</strong> (Art. 15): Was wurde verarbeitet?</li>
+<li><strong>Berichtigung</strong> (Art. 16)</li>
+<li><strong>Löschung</strong> (Art. 17): Browser-Daten löschen löscht
+alle lokalen Analysen.</li>
+<li><strong>Datenübertragbarkeit</strong> (Art. 20): JSON-Export aus dem
+Tool selbst möglich.</li>
+<li><strong>Beschwerde</strong> bei der Datenschutzbehörde (für
+Österreich: dsb.gv.at)</li>
+</ul>
+<p>Für Anfragen an den Tool-Betreiber: forschung@tschueller.com Für
+Anfragen an Anthropic: privacy@anthropic.com</p>
+<hr />
+<h2 id="was-das-tool-nicht-tut">7. Was das Tool NICHT tut</h2>
+<ul>
+<li>❌ Kein Tracking, kein Analytics</li>
+<li>❌ Keine Cookies (außer technische lokale Speicherung)</li>
+<li>❌ Keine Werbung</li>
+<li>❌ Kein Profiling</li>
+<li>❌ Kein Weiterverkauf von Daten</li>
+<li>❌ Keine Nutzer:innen-Accounts</li>
+</ul>
+<hr />
+<h2 id="open-source">8. Open Source</h2>
+<p>Der Quellcode ist unter CC BY 4.0 verfügbar. Du kannst: - Den Code
+selbst inspizieren - Eine eigene Instanz hosten (z.B. lokal, ohne
+Internet-Verbindung wäre eine eigene LLM-Anbindung erforderlich) -
+Modifikationen vornehmen, solange die Lizenz eingehalten wird</p>
+<hr />
+<p><em>Datenschutz-Hinweise · v1.0 · Mai 2026 · CC BY 4.0</em>
+<em>Thomas Schüller · Wien</em></p>
+</body>
+</html>
